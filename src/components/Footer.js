@@ -18,8 +18,17 @@ const Footer = () => {
   return (
     <Box bgColor={"blackAlpha.900"} p={"16"} color={"white"} minH={"40"}>
       <Stack direction={["column", "row"]}>
-        <VStack w={"full"} alignItems={"stretch"} px={"4"}>
-          <Heading size={"md"} textTransform={"uppercase"}>
+        <VStack
+          w={"full"}
+          alignItems={"stretch"}
+          px={"4"}
+          marginTop={["2", "0"]}
+        >
+          <Heading
+            size={"md"}
+            textTransform={"uppercase"}
+            textAlign={["center", "initial"]}
+          >
             Subscribe
           </Heading>
 
@@ -47,16 +56,17 @@ const Footer = () => {
         </VStack>
 
         <VStack
+          marginTop={["2", "0"]}
           w={"full"}
           h={"5rem"}
           //   borderLeft={["none", "1px solid white"]}
           //   borderRight={["none", "1px solid white"]}
         >
-          <Image src={lightLogo} h={["100%", "250%"]} margin={"-60px"} />
+          <Image src={lightLogo} h={["100%", "250%"]} m={["0", "-60px"]} />
           <Text>© All Rights Reserved 2024</Text>
         </VStack>
 
-        <VStack w={"full"}>
+        <VStack w={"full"} marginTop={["10", "0"]}>
           <Heading>Follow Us On</Heading>
           <Button variant={"link"} color={"white"}>
             <a href="">Instagram</a>

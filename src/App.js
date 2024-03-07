@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Videos from "./components/Videos";
+import Upload from "./components/Upload";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/home" element={<Home />}></Route>
         <Route path="/videos" element={<Videos />}></Route>
+        <Route path="/upload" element={<Upload />}></Route>
       </Routes>
       <Footer />
     </Router>
